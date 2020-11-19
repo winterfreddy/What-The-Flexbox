@@ -34,8 +34,10 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   border:10px solid goldenrod;
   min-height:100vh;
   flex-wrap:wrap;
+  flex-direction: column;
 }
 
+/* this is flex item while above is flex container */
 .box {
   width:33.3333333%;
 }
@@ -46,4 +48,13 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   main axis spans left to right, cross axis spans top to bottom
   however if the flex-direction goes column, then the main axis is top to bottom, cross axis is left to right
   and if it row-reverse or column-reverse, then the direction is reverse of its originals
+
+  flex-wrap default is nowrap. setting wrap allows you to respect that width restriction in the flex item
+  as with previous notes, in wrap, your main axis is left to right and cross axis is top to bottom
+  but with wrap-reverse, your main axis is still left to right, but your cross axis is bottom to top.
+
+  when flex-direction is set to column here, with height set to 100vh, all flex items try to take up 100% of viewport.
+  Adding min-height to 100vh as now makes it expand past the page.
+
+  simple note to remember, padding and border are part of item, whereas margin isn't and takes up valuable space
 */
