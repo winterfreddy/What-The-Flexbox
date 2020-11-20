@@ -44,3 +44,12 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .box5 {
   order:2;
 }
+
+/* notes
+
+  flex property of 1 means that all flex items are equally spaced apart across the width of the screen.
+  default is that the flex items would be squished together
+
+  the standard number for order propery is 0 and adding numbers would denote higher positioning
+
+*/
