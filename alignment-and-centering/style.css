@@ -52,3 +52,17 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   padding-bottom: 50px;
   align-self:stretch;
 }
+
+
+/* notes
+
+  justify-content allows to position the container,
+    * flex-start (default)
+    * flex-end (last element would be attached to right side of window)
+    * center
+    * space-between (first flex item to very left, last flex item to the very right, and give space to rest)
+    * space-around (give appropriate spacing to all flex items)
+
+  adding flex-direction: remember what's your main axis and cross axis to maintain that spacing
+
+*/
